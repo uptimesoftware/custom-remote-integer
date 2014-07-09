@@ -102,7 +102,7 @@
 			<validation_rule/>
 			<error_message/>
 			<gui_type>
-				<string/>
+				<integer/>
 			</gui_type>
 		</element>
 		<element name="timer" parameter_type="output" data_type="integer" gui_basic="0"

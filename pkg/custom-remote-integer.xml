@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uptime xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.uptimesoftware.com/erdc/erdc erdc"
-	xmlns="http://www.uptimesoftware.com/erdc/erdc"
-	xmlns:upt="http://www.uptimesoftware.com/erdc/erdc" version="4.0" target_grouping="other">
-	<class>Custom Remote Integer</class>
+<uptime xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="4.0" target_grouping="other">	<class>Custom Remote Integer</class>
 	<exec>com.uptimesoftware.uptime.erdc.MonitorCustomScriptRunner</exec>
 	<erdc_version>1.02</erdc_version>
 	<category>Advanced and Script Monitors</category>
@@ -15,11 +11,11 @@
 		<requires_agent_scripts>true</requires_agent_scripts>
 	</grid_info>
 	<elements>
-		<element name="process_windows" parameter_type="input" data_type="string" gui_basic="1" range_type="0">
+		<element name="process_windows" parameter_type="input" data_type="string" gui_basic="1" range_type="0" hidden="true">
 			<control_options> size:40 </control_options>
 			<default_value>plugins/scripts/custom-remote-integer/custom_remote.bat</default_value>
 			<short_description>Script Name</short_description>
-			<long_description>Name of the script/binary/process to be executed by up.time </long_description>
+			<long_description>Name of the script/binary/process to be executed by Uptime </long_description>
 			<validation_rule>
 				<alphanumeric/>
 			</validation_rule>
@@ -34,7 +30,7 @@
 			<control_options> size:40 </control_options>
 			<default_value>plugins/scripts/custom-remote-integer/custom_remote.sh</default_value>
 			<short_description>Script Name</short_description>
-			<long_description>Name of the script to be executed by up.time </long_description>
+			<long_description>Name of the script to be executed by Uptime </long_description>
 			<validation_rule>
 				<alphanumeric/>
 			</validation_rule>
@@ -50,7 +46,7 @@
 			<control_options>size:8</control_options>
 			<default_value>9998</default_value>
 			<short_description>Agent Port</short_description>
-			<long_description>up.time Agent Port (default is 9998)</long_description>
+			<long_description>Uptime Agent Port (default is 9998)</long_description>
 			<validation_rule/>
 			<error_message/>
 			<gui_type>
@@ -61,7 +57,7 @@
 		gui_basic='1' range_type='0' units=''>
 			<control_options>size:8</control_options>
 			<default_value></default_value>
-			<short_description>up.time Agent Password</short_description>
+			<short_description>Uptime Agent Password</short_description>
 			<long_description>Password setup on the agent system</long_description>
 			<validation_rule/>
 			<error_message/>
